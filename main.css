@@ -7,14 +7,16 @@
     
 }
 
+
 /*  navbar */
 nav{
     width: 100%;
-    height: 80px;
-    background-color: #393E46;
+    height: 127px;
+    background-image: linear-gradient(0deg, rgba(57, 62, 70, 1) 0%, rgba(39, 42, 48, 1) 48%, rgba(26, 27, 31, 1) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .inline{
@@ -25,27 +27,83 @@ nav{
     margin-left: 30px;
     .logo-echo{
         color: white;
-        font-size: 50px;
+        font-size: 60px;
     }
     
     .logo-lite{
+        font-size: 25px;
         color: rgb(0, 173, 181);
     }
 }
 
 .nav-menu{
     margin-right: 30px;
-    margin-top: 10px;
+    margin-top: 20px;
     .nav-contact{
         color: white;
-        font-size: 23px;
+        font-size: 30px;
     }
 }
 
 /*  main content */
+main{
+    width: 100%;
+    height: calc(100vh - 127px);
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    
+}
 
+.content{
+    width: 1108px;
+    height: 617px;
+    margin-top: 110px;
+    border-radius: 30px;
+    background-image: linear-gradient(0deg, rgba(57, 62, 70, 1) 0%, rgba(39, 42, 48, 1) 48%, rgba(26, 27, 31, 1) 100%);
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.35);
+}
 
+.top-content{
+    display: flex;
+    justify-content: space-between;
+    font-size: 48px;
+    .title{
+        color: white;
+    }
+    .add-button{
+        background-image: linear-gradient(180deg, rgba(0, 173, 181, 1) 0%, rgba(86, 218, 225, 1) 100%);
+        font-size: 40px;
+        border: none;
+        color: white;
+        width: 139px;
+        height: 70px;
+        border-radius: 20px;
+    }
+    .add-button:hover{
+        transform: scale(1.03);
+        transition: 1s ease;
+            
+        
+    }
+    .dateSelect{
+        width: 192px;
+        height: 62px;
+        background-image: linear-gradient(180deg, rgba(0, 173, 181, 1) 0%, rgba(86, 218, 225, 1) 100%);
+        border: none;
+        font-size: 25px;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        border-radius: 20px;
+    }
+    
+}
 
+.top-item{
+    display: flex;
+    align-items: center;
+    margin: 35px;
+}
 
 
 
