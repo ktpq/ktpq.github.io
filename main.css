@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mitr;
+    text-decoration: none;
+    
+}
+
+
+p{
+    display: inline-block;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #393E46;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo-echo{
+    color: white;
+    font-size: 50px;
+}
+
+.logo-lite{
+    color: rgb(0, 173, 181);
+}
+
+
+
