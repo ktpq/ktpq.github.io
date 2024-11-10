@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Mitr;
-    text-decoration: none;
+    /* text-decoration: none; */
     
 }
 
@@ -16,7 +16,9 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .inline{
@@ -32,7 +34,7 @@ nav{
     
     .logo-lite{
         font-size: 25px;
-        color: rgb(0, 173, 181);
+        color: #00adb5;
     }
 }
 
@@ -42,6 +44,7 @@ nav{
     .nav-contact{
         color: white;
         font-size: 30px;
+        text-decoration: none;
     }
 }
 
@@ -113,12 +116,120 @@ main{
         background-color: #222831;
         color: white;
         border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .item-left{
+            display: flex;
+            margin: 0px 10px;
+        }
+
+        .item-right{
+            margin: 0px 20px;
+        }
         .todo-text{
             font-size: 30px;
+            margin-left: 15px;
+            width: 700px
+            
         }
     }
+}
+
+img:hover{
+    transform: scale(1.07);
+    transition: 1s ease;
+}
+
+/* กล่องเพิ่ม todo list และ overlay*/
+
+.overlay {
+    display: none; /* ซ่อนพื้นหลังไว้ก่อน */
+    position: fixed; /* ใช้ fixed เพื่อให้ overlay ครอบทั้งหน้า */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(49, 48, 48, 0.5);
+    z-index: 1; /* น้อยกว่า new-product */
     
 }
+
+.popup{
+    width: 787px;
+    height: 240px;
+    background-color: #393E46;
+    border-radius: 25px;
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 2;
+    position: fixed;
+    margin: ;
+
+}
+
+.popup-title{
+    font-size: 2.18rem;
+    color: white;
+    text-align: center;
+}
+
+.input-event{
+    width: 32.438rem;
+    height: 3.875rem;
+    margin-top: 1.25rem;
+    margin-left: 1.25rem;
+    padding-left: 1.25rem;
+    border-radius: 1.25rem;
+    border: 4px solid #00adb5;
+    font-size: 20px;
+}
+
+.input-date{
+    font-size: 20px;
+    height: 3.875rem;
+    border-radius: 1.25rem;
+    margin-left: 1.25rem;
+    padding-left: 1.25rem;
+    border: none;
+    background-color: #00adb5;
+}
+
+.flex{
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-button{
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    padding: 0.2rem 1.2rem;
+    border: none;
+    color: white;
+}
+
+.popup-button:hover{
+    transform: scale(1.03);
+    transition: 1s ease;
+}
+
+.cancel{
+    background-color: #E15F5F;
+    margin-left: 1.5rem;
+}
+.confirm{
+    background-color: #5FE15F;
+    margin-right: 1.5rem;
+}
+
+
+
+
+
+
+
+
 
 
 

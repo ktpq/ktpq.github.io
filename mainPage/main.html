@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/mainPage/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Prompt:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    
+
+    <!-- navbar  -->
+    <nav>
+        <div class="nav-logo">
+        <a href="/start.html">
+            <p class="logo-echo inline"> Echo </p>
+            <p class="logo-lite inline"> LITE </p>
+        </a>
+        </div>
+        <div class="nav-menu">
+            <a href="#" class="nav-contact"> Contact </a>
+        </div>
+    </nav>
+
+    
+    <!--  main content -->
+    <main>
+
+    <!-- ช่องกรอก todo ใหม่ -->
+    <div class="popup">
+        <p class="popup-title"> Add To-Do List </p>
+        <div>
+            <input type="text" placeholder="Type here..." class="input-event">
+            <input type="date" class="input-date">
+        </div>
+        <div class="flex">
+            <button class="popup-button cancel"> Cancel </button>
+            <button class="popup-button confirm"> Confirm </button>
+        </div>
+    </div>
+    
+    <!-- กล่องตรงกลาง -->
+        <div class="content">
+            <div class="top-content">
+                <div class="top-item">
+                    <button class="add-button"> Add </button>
+                </div>
+                
+                <div class="top-item">
+                    <p class="title"> To-Do List</p>
+                </div>
+
+                <div class="top-item">
+                    <select name="dateList" id="" class="dateSelect">
+                        <option value="today"> today </option>
+                        <option value="yesterday"> yesterday </option>
+                    </select>
+                </div>
+            </div>
+            <div class="todo-list">
+                <div class="todo-item">
+                    <div class="item-left">
+                        <img src="/image/checkbox.png" alt="">
+                        <p class="todo-text"> ออกกำลังกาย </p>
+                    </div>
+                    <div class="item-right">
+                        <img src="/image/delete.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="todo-item">
+                    <div class="item-left">
+                        <img src="/image/checkbox.png" alt="">
+                        <p class="todo-text"> พรีเซนต์โปรเจค </p>
+                    </div>
+                    <div class="item-right">
+                        <img src="/image/delete.png" alt="">
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <div class="item-left">
+                        <img src="/image/checkbox.png" alt="">
+                        <p class="todo-text"> ทำการบ้าน </p>
+                    </div>
+                    <div class="item-right">
+                        <img src="/image/delete.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>
