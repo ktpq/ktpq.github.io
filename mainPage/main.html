@@ -3,104 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="/mainPage/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <title>Main page </title>
 </head>
+
 <body>
-
     <!-- overlay -->
-    <div class="overlay" id="overlay"></div>
+     <div class="overlay"></div>
 
-    
+    <!-- navbar -->
+     <nav>
+        <div >
+            <a href="/start.html" class="logo">
+                <p class="title-echo"> Echo </p>
+                <p class="title-lite"> LITE </p>
+            </a>
+        </div>
+        <div class="contact">
+            <a href="/start.html">
+                <p class = "contact"> Contact </p>
+            </a>
+        </div>
+     </nav>
 
-    <!-- navbar  -->
-    <nav>
-        <div class="nav-logo">
-        <a href="/start.html">
-            <p class="logo-echo inline"> Echo </p>
-            <p class="logo-lite inline"> LITE </p>
-        </a>
+     <!-- main content -->
+     <main>
+        <!-- กล่อง add event ใหม่ -->
+        <div class="popup">
+            <div class="popup-row top">
+                <p class="todo-text"> To-Do List </p>
+            </div>
+            <div class="popup-row center">
+                <div class="input-container">
+                    <input type="text" class="input-text" placeholder="type here...">
+                    <input type="date" class="input-date">
+                </div>
+            </div>
+            <div class="popup-row bottom">
+                <button class="cancel-button btn"> Cancel </button>
+                <button class="confirm-button btn"> Confirm </button>
+            </div>
         </div>
-        <div class="nav-menu">
-            <a href="#" class="nav-contact"> Contact </a>
-        </div>
-    </nav>
 
-    
-    <!--  main content -->
-    <main>
-
-    <!-- ช่องกรอก todo ใหม่ -->
-    <div class="popup">
-        <p class="popup-title"> Add To-Do List </p>
-        <div>
-            <input type="text" placeholder="Type here..." class="input-event">
-            <input type="date" class="input-date">
-        </div>
-        <div class="flex">
-            <button class="popup-button cancel"> Cancel </button>
-            <button class="popup-button confirm"> Confirm </button>
-        </div>
-    </div>
-    
-    <!-- กล่องตรงกลาง -->
-        <div class="content">
-            <div class="top-content">
-                <div class="top-item">
+        <!-- กล่องแสดงรายการ event  -->
+        <div class="box">
+            <div class="content">
+                <div class="content-menu">
                     <button class="add-button"> Add </button>
-                </div>
-                
-                <div class="top-item">
-                    <p class="title"> To-Do List</p>
-                </div>
-
-                <div class="top-item">
-                    <select name="dateList" id="" class="dateSelect">
-                        <option value="today"> today </option>
-                        <option value="yesterday"> yesterday </option>
+                    <p> To-Do List </p>
+                    <select name="dateList" id="" class="date-select">
+                        <option value="today"> 2024-11-11 </option>
+                        <option value="yesterday"> 2024-11-12 </option>
                     </select>
                 </div>
-            </div>
-            <div class="todo-list">
-                <div class="todo-item">
-                    <div class="item-left">
-                        <img src="/image/checkbox.png" alt="">
-                        <p class="todo-text"> ออกกำลังกาย </p>
-                    </div>
-                    <div class="item-right">
-                        <img src="/image/delete.png" alt="">
-                    </div>
-                </div>
-                
-                <div class="todo-item">
-                    <div class="item-left">
-                        <img src="/image/checkbox.png" alt="">
-                        <p class="todo-text"> พรีเซนต์โปรเจค </p>
-                    </div>
-                    <div class="item-right">
-                        <img src="/image/delete.png" alt="">
-                    </div>
-                </div>
+                <div class="content-todo">
 
-                <div class="todo-item">
-                    <div class="item-left">
-                        <img src="/image/checkbox.png" alt="">
-                        <p class="todo-text"> ทำการบ้าน </p>
+                    <div class="todo-item">
+                        <div class="item-left">
+                            <img src="/image/checkbox.png" alt="">
+                            <p class="todo-text"> ทำการบ้าน </p>
+                        </div>
+                        <div class="item-right">
+                            <img src="/image/delete.png" alt="">
+                        </div>
                     </div>
-                    <div class="item-right">
-                        <img src="/image/delete.png" alt="">
+
+                    <div class="todo-item">
+                        <div class="item-left">
+                            <img src="/image/checkbox.png" alt="">
+                            <p class="todo-text"> ทำการบ้าน </p>
+                        </div>
+                        <div class="item-right">
+                            <img src="/image/delete.png" alt="">
+                        </div>
                     </div>
+
+                    <div class="todo-item">
+                        <div class="item-left">
+                            <img src="/image/checkbox.png" alt="">
+                            <p class="todo-text"> ทำการบ้าน </p>
+                        </div>
+                        <div class="item-right">
+                            <img src="/image/delete.png" alt="">
+                        </div>
+                    </div>  
+
                 </div>
             </div>
         </div>
-    </main>
+     </main>
 
-    
-    
-    
-    <script src="main.js"></script>
+    <script src="/mainPage/main.js"></script>
 </body>
 </html>
