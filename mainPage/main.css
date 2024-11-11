@@ -77,16 +77,18 @@ main{
     border-radius: 30px;
     background-color: #393E46;
     margin-top: -6rem;
+    overflow-y: auto;
+    
 }
 
 .content{
     /* border: 1px solid red; */
     height: 100%;
     margin: 0 5rem;
+    
 }
 
 .content-menu{
-    
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
