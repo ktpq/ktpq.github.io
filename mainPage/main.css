@@ -31,6 +31,7 @@ nav{
     background-image: linear-gradient(0deg, rgba(57, 62, 70, 1) 0%, rgba(39, 42, 48, 1) 48%, rgba(26, 27, 31, 1) 100%);
 }
 
+
 nav .logo{
     
     padding-left: 2rem;
@@ -40,6 +41,7 @@ nav .logo{
         color: white;
         font-size: 3.5rem;
     }
+    
     .title-lite{
         color: #00adb5;
         display: flex;
