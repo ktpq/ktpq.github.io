@@ -19,6 +19,10 @@ function Event(event_name){
     // return saveData(Event);
 }
 
+if (firstTime){
+    localStorage.clear();
+    firstTime = false;
+}
 
 function dateSelected(){   // ฟังก์ชั่นใช้ show วันที่ใน tag select
     let arrayDate = [];
