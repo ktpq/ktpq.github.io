@@ -13,16 +13,16 @@ let allImageCheck = document.querySelectorAll('.image-check');
 
 // let firstTime = true;
 
-// function Event(event_name){
-//     this.name = event_name;
-//     this.status = 0;
-//     // return saveData(Event);
-// }
-
-if (firstTime){
-    localStorage.clear();
-    firstTime = false;
+function Event(event_name){
+    this.name = event_name;
+    this.status = 0;
+    // return saveData(Event);
 }
+
+// if (firstTime){
+//     localStorage.clear();
+//     firstTime = false;
+// }
 
 function dateSelected(){   // ฟังก์ชั่นใช้ show วันที่ใน tag select
     let arrayDate = [];
