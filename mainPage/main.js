@@ -11,13 +11,13 @@ let contentTodo = document.querySelector('.content-todo');
 
 let allImageCheck = document.querySelectorAll('.image-check');
 
-let firstTime = true;
+// let firstTime = true;
 
-function Event(event_name){
-    this.name = event_name;
-    this.status = 0;
-    // return saveData(Event);
-}
+// function Event(event_name){
+//     this.name = event_name;
+//     this.status = 0;
+//     // return saveData(Event);
+// }
 
 if (firstTime){
     localStorage.clear();
