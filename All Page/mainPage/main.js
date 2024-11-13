@@ -13,11 +13,23 @@ let allImageCheck = document.querySelectorAll('.image-check');
 
 // let firstTime = true;
 
+const alertBox = document.querySelector('.alert-box');
+const failBox = document.createElement('p');
+failBox.classList.add('fail-box');
+failBox.innerHTML = 'Please fill in all required fields before adding the event !'
+
+const successBox = document.createElement('p');
+successBox.classList.add('success-box');
+successBox.innerHTML =  'Event added to your to-do list successfully !';
+
 function Event(event_name){
     this.name = event_name;
     this.status = 0;
     // return saveData(Event);
 }
+
+
+
 
 // if (firstTime){
 //     localStorage.clear();
@@ -96,6 +108,7 @@ function showData(date) {
 
 
 
+
 function saveData(){ // บันทึกข้อมูลลงใน localstorage
     let found = false;
     let event = new Event(inputText.value);
@@ -115,10 +128,24 @@ function saveData(){ // บันทึกข้อมูลลงใน localst
             dataArray.push(event);
             localStorage.setItem(inputDate.value, JSON.stringify(dataArray));
         }
+
+        alertBox.innerHTML = '';
+        alertBox.append(successBox);
+        successBox.style.display = 'block';
         closePopup();
-        location.reload();
+        setTimeout(() => {
+            location.reload();
+        }, 1800);
+        
+        
+        
+        
     } else { // ว่างช่องใดช่องหนึ่ง
+        
         // ตรงนี้ทำหน้าต่าง popup สำหรับ ไม่สำเร็จ
+        alertBox.append(failBox);
+        failBox.style.display = 'block';
+
     }
     
 }
@@ -212,6 +239,7 @@ addButton.addEventListener('click', openPopup);
 
 document.querySelector('.cancel-button').addEventListener('click', () => {
     closePopup();
+    alertBox.innerHTML = '';
     inputText.value = "";
     inputDate.value = "";
 })

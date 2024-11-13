@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Mitr;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,body{
+    height: 100%;
+}
+
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12%;
+    background-image: linear-gradient(0deg, rgba(57, 62, 70, 1) 0%, rgba(39, 42, 48, 1) 48%, rgba(26, 27, 31, 1) 100%);
+}
+
+p{margin: 0;}
+
+
+nav .logo{
+    
+    padding-left: 2rem;
+    width: 15%;
+    display: flex;
+    .title-echo{
+        color: white;
+        font-size: 3.5rem;
+    }
+    
+    .title-lite{
+        color: #00adb5;
+        display: flex;
+        font-size: 1.3rem;
+        padding-top: 1.5rem;
+        padding-left: 0.3rem;
+        align-items: center;
+    }
+}
+
+nav .main{
+    .main{
+        color: white;
+        font-size: 1.8rem;
+        padding-right: 1.4rem;
+        padding-top: 1rem;
+    }
+}
+
+/* main content */
+main{
+    /* border: 3px solid red; */
+    height: 88%;
+    background-image: linear-gradient(135deg, rgba(34, 40, 49, 1) 0%, rgba(55, 64, 78, 1) 50%, rgba(74, 86, 104, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 1200px;
+    height: 700px;
+    /* border: 1px solid red; */
+    display: flex;
+    
+}
+
+/* .borderg{
+    border: 3px solid green;
+} */
+
+/* left */
+.left{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .left-content{
+        /* width: 80%;
+        height: 60%; */
+        /* border: 2px solid purple; */
+        padding-left: 50px;
+        
+    }
+}
+
+
+
+.welcome-text{
+    font-size: 37px;
+    color: #00adb5;
+}
+
+.name-text{
+    font-size: 50px;
+    color: white;
+}
+
+.des-text{
+    font-size: 18x;
+    color: #C8CACB;
+}
+.item{
+    margin-bottom: 2rem;
+}
+
+.button-container{
+    display: flex;
+    
+}
+
+.btn{
+    font-size: 25px;
+    padding: 5px 20px 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    border: 3px solid #00adb5;
+    color: white;
+    background-color: #393E46;
+    margin: 0 1rem;
+        .inside-button{
+            margin-right: 0.5rem;
+    }
+}
+
+/* right */
+.right{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+}
+
+.btn:hover{
+    background-color:  #24272d;
+    transform: scale(1.03);
+    transition: 1s ease;
+}
+
+
+

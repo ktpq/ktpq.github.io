@@ -61,6 +61,38 @@ nav .contact{
     }
 }
 
+/* .nav-item{
+    border: 1px solid red;
+} */
+
+.alert-box{
+    width: 30%;
+    height: 70%;
+    z-index: 100;
+}
+
+.success-box{
+    color: white;
+    background-color: #5FE15F;
+    width: 100%;
+    height: 100%;
+    display: none;
+    text-align: center;
+    line-height: 80px;
+    font-size: 1.2rem;
+}
+
+.fail-box{
+    color: white;
+    background-color: #f04040;
+    width: 100%;
+    height: 100%;
+    display: none;
+    text-align: center;
+    line-height: 80px;
+    font-size: 1.2rem;
+}
+
 
 /* main content */
 main{
@@ -218,10 +250,34 @@ main{
     color: white;
 }
 
+
+
 .cancel-button{
     background-color: #E15F5F;
 }
 
+.cancel-button:hover{
+    transform: scale(1.02);
+    transition: 1s ease;
+    background-color:  #e33737;
+}
+
 .confirm-button{
     background-color: #5FE15F;
+}
+
+.confirm-button:hover{
+    transform: scale(1.03);
+    transition: 1s ease;
+    background-color:  #39dc39;
+}
+
+.image-check:hover{
+    transform: scale(1.10);
+    transition: 1s ease;
+}
+
+.image-delete:hover{
+    transform: scale(1.10);
+    transition: 1s ease;
 }
