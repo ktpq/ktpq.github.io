@@ -66,7 +66,9 @@ button:hover{
         justify-content: center;
         align-items: center;
     }
-    
+    .content{
+        height: 260px;
+    }
     .title-echo{
         font-size: 130px;
     }
@@ -87,6 +89,9 @@ button:hover{
     }
     .title-echo{
         font-size: 100px;
+    }
+    .content{
+        height: 210px;
     }
     .title-lite{
         font-size: 32px;
