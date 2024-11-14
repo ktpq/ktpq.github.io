@@ -20,40 +20,81 @@ p{
 .content{
     width: 600px;
     height: 400px;
-    .title-echo{
-        color: white;
-        font-size: 200px;
-        margin: 0;
     
-    }
-    
-    .title-lite{
-        color: rgb(0, 173, 181);
-        font-size: 64px;
-        margin: 0;
-    }
-    
+}
+
+.title-echo{
+    color: white;
+    font-size: 200px;
+    margin: 0;
+
+}
+
+.title-lite{
+    color: rgb(0, 173, 181);
+    font-size: 64px;
+    margin: 0;
 }
 
 .button-wrapper{
     display: flex;
     justify-content: center;
     margin-top: -30px   ;
-    button{
-        padding: 10px 30px 10px 30px;
-        font-size: 20px;
-        background-color: #393E46;
-        color: white;
-        border: 3px solid  rgb(0, 173, 181);
-        border-radius: 30px;
-        font-family: Mitr;
-        
+}
+
+button{
+    padding: 10px 30px 10px 30px;
+    font-size: 20px;
+    background-color: #393E46;
+    color: white;
+    border: 3px solid  rgb(0, 173, 181);
+    border-radius: 30px;
+    font-family: Mitr;
+    
+}
+button:hover{
+    background-color:  #2c2f35;
+    transform: scale(1.03);
+    transition: 1s ease;
+    
+}
+
+/* 600 px screen */
+@media only screen and (max-width: 600px) {
+    .title-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    button:hover{
-        background-color:  #2c2f35;
-        transform: scale(1.03);
-        transition: 1s ease;
-        
+    
+    .title-echo{
+        font-size: 130px;
+    }
+    .title-lite{
+        font-size: 41.6px;
+        margin-top: 4rem;
+    }
+    button{
+        padding: 8px 25px 8px 25px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .title-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title-echo{
+        font-size: 100px;
+    }
+    .title-lite{
+        font-size: 32px;
+        margin-top: 3rem;
+    }
+    button{
+        padding: 6px 20px 6px 20px;
+        margin-top: 10px;
     }
 }
 
