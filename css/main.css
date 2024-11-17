@@ -65,31 +65,31 @@ nav .logo{
 } */
 
 .alert-box{
-    width: 30%;
-    height: 70%;
+    width: 50%;
+    height: auto;
     z-index: 100;
+    font-size: 1.2rem;
 }
 
 .success-box{
     color: white;
     background-color: #5FE15F;
     width: 100%;
-    height: 100%;
+    height: auto;
     display: none;
     text-align: center;
     line-height: 80px;
-    font-size: 1.2rem;
+    
 }
 
 .fail-box{
     color: white;
     background-color: #f04040;
     width: 100%;
-    height: 100%;
+    height: auto;
     display: none;
     text-align: center;
     line-height: 80px;
-    font-size: 1.2rem;
 }
 
 
@@ -277,4 +277,109 @@ main{
 .image-delete:hover{
     transform: scale(1.10);
     transition: 1s ease;
+}
+
+
+/* 1200px responsive */
+
+@media only screen and (max-width: 1200px){
+    .popup{
+        width: 70%;
+    }
+    .alert-box{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .popup{
+        width: 70%;
+    }
+    .alert-box{
+        width: 60%;
+    }
+    .box{
+        width: 85%;
+    }
+    .content{
+        margin: 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .popup{
+        width: 80%;
+    }
+    .alert-box{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .box{
+        width: 85%;
+    }
+    .content{
+        margin: 0 2rem;
+    }
+    .todo-text{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .popup{
+        width: 80%;
+    }
+    .alert-box{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .box{
+        width: 95%;
+    }
+    .content{
+        margin: 0 1rem;
+    }
+    .todo-text{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .popup{
+        width: 90%;
+    }
+    .alert-box{
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .box{
+        width: 100%;
+    }
+    .content{
+        margin: 0 0.2rem;
+    }
+    .todo-text{
+        font-size: 1rem;
+        margin-top: 0.7rem;
+    }
+    .image-check{
+        transform: scale(0.8);
+    }
+    .image-delete{
+        transform: scale(0.8);
+    }
+    .box-title{
+        font-size: 1.5rem;
+    }
+    .title-echo{
+        font-size: 2.5rem;
+    }
+    .title-lite{
+        font-size: 0.9rem;
+        margin-top: -0.1rem;
+    }
+    .contact{
+        font-size: 1.2rem;
+        margin-top: -0.3rem;
+    }
 }

@@ -16,11 +16,11 @@ let allImageCheck = document.querySelectorAll('.image-check');
 const alertBox = document.querySelector('.alert-box');
 const failBox = document.createElement('p');
 failBox.classList.add('fail-box');
-failBox.innerHTML = 'Please fill in all required fields before adding the event !'
+failBox.innerHTML = 'Event added failed !'
 
 const successBox = document.createElement('p');
 successBox.classList.add('success-box');
-successBox.innerHTML =  'Event added to your to-do list successfully !';
+successBox.innerHTML =  'Event added successfully !';
 
 function Event(event_name){
     this.name = event_name;
