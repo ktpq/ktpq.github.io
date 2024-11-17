@@ -37,30 +37,29 @@ nav .logo{
     padding-left: 2rem;
     width: 15%;
     display: flex;
-    .title-echo{
-        color: white;
-        font-size: 3.5rem;
-    }
     
-    .title-lite{
-        color: #00adb5;
-        display: flex;
-        font-size: 1.3rem;
-        padding-top: 1.5rem;
-        padding-left: 0.3rem;
-        align-items: center;
-    }
+}
+.title-echo{
+    color: white;
+    font-size: 3.5rem;
 }
 
-nav .contact{
-    .contact{
-        color: white;
-        font-size: 1.8rem;
-        padding-right: 1.4rem;
-        padding-top: 1rem;
-    }
+.title-lite{
+    color: #00adb5;
+    display: flex;
+    font-size: 1.3rem;
+    padding-top: 1.5rem;
+    padding-left: 0.3rem;
+    align-items: center;
 }
 
+
+.contact{
+    color: white;
+    font-size: 1.8rem;
+    padding-right: 1.4rem;
+    padding-top: 1rem;
+}
 /* .nav-item{
     border: 1px solid red;
 } */
@@ -106,7 +105,7 @@ main{
 }
 
 .box{
-    width: 55%;
+    width: 80%;
     height: 70%;
     border-radius: 30px;
     background-color: #393E46;
@@ -147,8 +146,7 @@ main{
 
 .date-select{
     font-size: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0 0.5rem;
     color: rgb(68, 67, 67);
     background-image: linear-gradient(180deg, rgba(0, 173, 181, 1) 0%, rgba(86, 218, 225, 1) 100%);
     border: none;
@@ -201,7 +199,6 @@ main{
 .popup-row{
     height: 33%;
     /* border: 1px solid red; */
-    
 }
 
 /* top */
@@ -281,3 +278,4 @@ main{
     transform: scale(1.10);
     transition: 1s ease;
 }
+
