@@ -38,7 +38,8 @@ button:hover{
 }
 
 section{
-    width: 60%;
+    width: 100%;
+    /* border: 1px solid red; */
 }
 
 .row{
@@ -67,4 +68,32 @@ section{
 .caption {
     font-size: 25px;
     color: white;
+}
+
+@media screen and (max-width: 1600px){
+    img{
+        width: 9vw;
+        margin-top: 1vh;
+    }
+    .koffee{
+        font-size: 12vw;
+    }
+    .caption{
+        font-size: 3vw;
+    }
+    .row2{
+        margin-top: -1vh;
+    }
+    .row3{
+        padding: 1vw 0;
+    }
+
+    .section{
+        width: 100vw;
+        
+    }
+    button{
+        padding: 1vh 4vw;
+        font-size: 3vw;
+    }
 }
