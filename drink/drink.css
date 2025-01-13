@@ -21,7 +21,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10%;
+    height: 10vh;
     width: 95%;
     transition: 0.3s ease;
     margin-top: 2.5rem;
