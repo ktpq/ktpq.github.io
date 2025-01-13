@@ -70,6 +70,22 @@ $(document).ready(function () {
     });
 });
 
+let allMenu = document.querySelectorAll('.menu-item');
+allMenu.forEach((menu) =>{
+    menu.addEventListener('mouseover', ()=>{
+        let price = menu.querySelector('.menu-price');
+        let ingredient = menu.querySelector('.menu-ingredient');
+        price.style.display = 'block';
+        ingredient.style.display = 'block'
+    })
+    menu.addEventListener('mouseout', () =>{
+        let price = menu.querySelector('.menu-price');
+        let ingredient = menu.querySelector('.menu-ingredient');
+        price.style.display = 'none';
+        ingredient.style.display = 'none'
+    })
+})
+
 
 
 
