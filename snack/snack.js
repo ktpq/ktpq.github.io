@@ -1,7 +1,7 @@
 let lastScrollTop = 0;
 let navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () =>{
-    const currentScroll = window.pageYOffset;
+    const currentScroll = window.scrollY;
 
       if (currentScroll > lastScrollTop) {
         // เลื่อนลง
