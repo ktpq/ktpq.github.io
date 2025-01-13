@@ -130,6 +130,7 @@ main{
 .menu-item:hover{
     transition: 0.5s ease;
     box-shadow: 10px 10px 0px 0px #e9d786;
+    transform: translateY(-10px);
     .menu-name{
         color: #e9d786;
     }
