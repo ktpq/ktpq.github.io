@@ -154,17 +154,16 @@ main{
     font-size: 1rem;
 }
 
-@media screen and (max-width:1122px){
+@media screen and (max-width:1128px){
     nav{
-        height: 300px;
+        height: fit-content;
         width: 100%;
         margin-top: 0;
         border-radius: 0;
         flex-direction: column;
     }
-    
     main{
-        margin-top: 20rem;
+        margin-top: 65vh;
     }
 
     .nav-menu{
@@ -173,7 +172,43 @@ main{
 
     .nav-menu-item{
         padding: 0.5rem 0;
-        
+    }
+    .topic{
+        font-size: 10vw;
+    }
+    .logo-text{
+        font-size: 8vw;
+    }
+    .logo{
+        width: 100%;
+        margin-left: 0;
+    }
+    .nav-menu-item{
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width:928px){
+    main{
+        margin-top: 55vh;
+    }
+}
+
+@media screen and (max-width:728px){
+    main{
+        margin-top: 45vh;
+    }
+}
+
+@media screen and (max-width:528px){
+    main{
+        margin-top: 35vh;
+    }
+}
+
+@media screen and (max-width:350px){
+    main{
+        margin-top: 25vh;
     }
 }
 
