@@ -150,12 +150,12 @@ main{
     /* border: 3px solid gray; */
     width: 100%;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 @media screen and (max-width:1122px){
     nav{
-        height: fit-content;
+        height: 300px;
         width: 100%;
         margin-top: 0;
         border-radius: 0;
@@ -163,7 +163,7 @@ main{
     }
     
     main{
-        margin-top: 25rem;
+        margin-top: 20rem;
     }
 
     .nav-menu{
@@ -173,10 +173,6 @@ main{
     .nav-menu-item{
         padding: 0.5rem 0;
         
-    }
-
-    .topic{
-        font-size: 2rem;
     }
 }
 
