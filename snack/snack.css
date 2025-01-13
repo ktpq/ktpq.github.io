@@ -13,10 +13,11 @@ body{
 }
 /* nav start*/
 nav{
+    border: 1px solid red;
     position: fixed;
     top: 0;
     z-index: 1000;
-    background-color: linear-gradient(90deg, rgba(52, 47, 40, 1) 31%, rgba(83, 75, 64, 1) 100%);
+    background-color: rgba(52, 47, 40, 1);
     box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: space-between;
