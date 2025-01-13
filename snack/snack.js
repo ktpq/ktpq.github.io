@@ -1,7 +1,16 @@
-
+let lastScrollTop = 0;
 let navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () =>{
-    
+    const currentScroll = window.pageYOffset;
+
+      if (currentScroll > lastScrollTop) {
+        // เลื่อนลง
+        navbar.classList.add('hidden');
+      } else {
+        // เลื่อนขึ้น
+        navbar.classList.remove('hidden');;
+      }
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 })
 
 $(document).ready(function () {

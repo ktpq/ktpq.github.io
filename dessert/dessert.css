@@ -23,7 +23,7 @@ nav{
     align-items: center;
     height: 10%;
     width: 95%;
-    
+    transition: 0.3s ease;
     margin-top: 2.5rem;
     border-radius: 50px;
 }
@@ -152,6 +152,10 @@ main{
     width: 100%;
     color: white;
     font-size: 1rem;
+}
+
+.hidden{
+    transform: translateY(-100%);
 }
 
 @media screen and (max-width:1128px){
